@@ -4,7 +4,7 @@ The Postit App provides a platform where users can advertise their goods and ser
 # The App's Home Page
 ![Postit.ng Screenshots](https://github.com/Ataimo007/Postit.ng/blob/master/appshots/shot1.png)
 
-# Search through available Ads
+# Searching through available Ads
 ![Postit.ng Screenshots](https://github.com/Ataimo007/Postit.ng/blob/master/appshots/shot2.png)
 
 # Viewing An Ad
