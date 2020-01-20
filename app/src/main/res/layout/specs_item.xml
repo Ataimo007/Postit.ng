@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/spec_property"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_column="0"
+        android:text="Property"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/spec_value"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_column="1"
+        android:text="Value"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+</TableRow>

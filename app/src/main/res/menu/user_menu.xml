@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item
+        android:id="@+id/action_info"
+        android:enabled="true"
+        android:icon="@drawable/action_notification_white"
+        android:iconTint="@android:color/white"
+        android:title="Info"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_favourite"
+        android:enabled="true"
+        android:icon="@drawable/action_favorite_on_white"
+        android:iconTint="@android:color/white"
+        android:title="Favourite"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_chat"
+        android:enabled="true"
+        android:icon="@drawable/ic_configuration"
+        android:iconTint="@android:color/white"
+        android:title="Chat"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:enabled="true"
+        android:icon="@drawable/ic_logout"
+        android:iconTint="@android:color/white"
+        android:title="Logout"
+        android:visible="true"
+        app:showAsAction="ifRoom"
+        android:onClick="logout"/>
+
+
+</menu>

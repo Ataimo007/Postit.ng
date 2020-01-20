@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00ffffff"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_sub2">
+
+        <ImageView
+            android:id="@+id/product_background_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/white"
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:scaleType="centerInside"
+            android:background="@color/whiteTrans"
+            app:layout_constraintBottom_toTopOf="@+id/entity_controls"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo2" />
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/price_tag"
+            android:paddingStart="40dp"
+            android:paddingEnd="20dp"
+            android:shadowRadius="0.6"
+            android:text="Price Tag"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/entity_controls"
+            app:layout_constraintEnd_toEndOf="@+id/product_image" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/entity_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dcffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_image">
+
+            <TextView
+                android:id="@+id/product_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Title"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/product_category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:maxLines="3"
+                android:overScrollMode="ifContentScrolls"
+                android:text="Category"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="@+id/product_title"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/product_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:overScrollMode="ifContentScrolls"
+                android:text="Location"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintEnd_toEndOf="@+id/product_category"
+                app:layout_constraintStart_toStartOf="@+id/product_category"
+                app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+            <Button
+                android:id="@+id/product_favourite"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@android:color/transparent"
+                app:icon="@drawable/action_favorite_off"
+                app:iconTint="@color/app_sub1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/product_location"
+                app:layout_constraintTop_toBottomOf="@+id/product_location"
+                app:rippleColor="@color/app_sub1"
+                app:strokeColor="@android:color/transparent" />
+
+            <Button
+                android:id="@+id/product_info"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@android:color/transparent"
+                app:icon="@drawable/ic_info_outline_black_24dp"
+                app:iconTint="@color/app_sub2"
+                app:layout_constraintBottom_toBottomOf="@+id/product_favourite"
+                app:layout_constraintEnd_toStartOf="@+id/product_favourite"
+                app:layout_constraintTop_toTopOf="@+id/product_favourite"
+                app:rippleColor="@color/app_sub2"
+                app:strokeColor="@android:color/transparent" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/app_sub2"
+                app:layout_constraintStart_toStartOf="@+id/product_title"
+                app:layout_constraintTop_toBottomOf="@+id/product_title"
+                app:srcCompat="@drawable/ic_apps_black_24dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:tint="@color/app_sub1"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:srcCompat="@drawable/ic_location_on_black_24dp" />
+
+            <TextView
+                android:id="@+id/product_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:overScrollMode="ifContentScrolls"
+                android:text="Phone Number"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/product_info"
+                app:layout_constraintEnd_toStartOf="@+id/product_info"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/product_location"
+                app:layout_constraintTop_toTopOf="@+id/product_info" />
+
+            <ImageView
+                android:id="@+id/product_phone_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/app_sub2"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/product_phone"
+                app:srcCompat="@drawable/ic_call_black_24dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="24dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="13dp"
+            android:tint="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/product_price"
+            app:layout_constraintStart_toStartOf="@+id/product_price"
+            app:layout_constraintTop_toTopOf="@+id/product_price"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/naira_currency" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

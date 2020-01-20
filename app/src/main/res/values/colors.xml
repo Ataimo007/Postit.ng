@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#C8FFFFFF</color>
+    <color name="colorAccent">@color/app_sub2</color>
+    <color name="colorAccent2">#4D4D4D</color>
+
+    <color name="whiteTrans">#66FFFFFF</color>
+    <color name="whiteTrans2">#B3FFFFFF</color>
+    <color name="whiteTrans0">#E6FFFFFF</color>
+    <color name="nav_header_color">#c8ffffff</color>
+
+    <color name="text_color">@android:color/white</color>
+    <color name="app_sub1">#C91616</color>
+    <color name="app_sub2">#039934</color>
+    <color name="app_sub2_trans">#90039934</color>
+    <color name="app_sub3_trans">#19039934</color>
+    <color name="background_color">#dcffffff</color>
+
+    <color name="list_normal">#F0F1FFF4</color>
+    <color name="list_invert">#7ECCFFDC</color>
+
+    <!--<color name="colorPrimary">#019934</color>-->
+    <!--<color name="colorPrimaryDark">#d202df4b</color>-->
+    <!--<color name="colorAccent">#D81B60</color>-->
+
+</resources>

@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape
+            android:shape="rectangle"
+            android:tint="@color/app_sub2">
+
+            <size android:height="24dp"
+                android:width="24dp" />
+
+        </shape>
+    </item>
+
+    <item android:drawable="@drawable/ic_naira_currency"
+        android:top="5dp"
+        android:bottom="5dp"
+        android:left="5dp"
+        android:right="5dp"/>
+
+</layer-list>

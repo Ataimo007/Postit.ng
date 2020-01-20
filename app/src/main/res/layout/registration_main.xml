@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_sub2"
+    android:backgroundTint="@color/app_sub2"
+    android:backgroundTintMode="src_over"
+    android:fitsSystemWindows="true"
+    tools:context=".user.Registration">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".user.Registration">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/product_detail_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:collapsedTitleTextAppearance="@style/PrimaryText"
+                app:contentScrim="@color/whiteTrans2"
+                app:expandedTitleTextAppearance="@style/PrimaryText"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:layout_scrollInterpolator="@android:anim/decelerate_interpolator"
+                app:titleEnabled="true"
+                app:toolbarId="@+id/toolbar">
+
+                <ImageView
+                    android:id="@+id/app_bar_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@color/background_color"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax"
+                    app:srcCompat="@drawable/avatar" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="top|right"
+                    android:layout_marginTop="7dp"
+                    app:layout_collapseMode="pin"
+                    app:srcCompat="@drawable/logo2" />
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    app:layout_collapseMode="parallax"
+                    app:subtitle="Enter Your Details"
+                    app:title="Registration"
+                    app:titleTextColor="@android:color/white"></androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/reg_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/reg_background"
+            app:behavior_overlapTop="0dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <include
+                layout="@layout/activity_registration"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/reg_register"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:background="@color/app_sub2"
+            android:onClick="register"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@color/app_sub2"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/icon_reg"
+            app:rippleColor="@color/colorPrimary" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:clickable="true"
+            android:onClick="changePicture"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/app_sub2"
+            app:elevation="5dp"
+            app:hideMotionSpec="@android:anim/accelerate_interpolator"
+            app:layout_anchor="@id/product_detail_appbar"
+            app:layout_anchorGravity="bottom|end"
+            app:rippleColor="@color/colorPrimary"
+            app:showMotionSpec="@android:anim/decelerate_interpolator"
+            app:srcCompat="@drawable/icon_edit" />
+
+        <!--<com.google.android.material.floatingactionbutton.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="16dp"-->
+        <!--android:clickable="true"-->
+        <!--android:src="@android:drawable/ic_input_add"-->
+        <!--android:tint="@android:color/white"-->
+        <!--app:backgroundTint="@color/app_sub2"-->
+        <!--app:fabSize="normal" />-->
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ad_year"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Year"
+        android:textColorHint="@drawable/reg_input_sel"
+        android:visibility="visible"
+        app:boxCornerRadiusBottomEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        app:boxStrokeColor="@drawable/reg_selector"
+        app:errorEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ad_year_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_drop_down_dp"
+            android:imeOptions="actionNext"
+            android:inputType="textAutoCorrect|number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ad_body_style"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Body Style"
+        android:textColorHint="@drawable/reg_input_sel"
+        android:visibility="visible"
+        app:boxCornerRadiusBottomEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        app:boxStrokeColor="@drawable/reg_selector"
+        app:errorEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/ad_year"
+        app:layout_constraintStart_toStartOf="@+id/ad_year"
+        app:layout_constraintTop_toBottomOf="@+id/ad_year">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ad_body_style_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_drop_down_dp"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords|textAutoCorrect|textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Transmission"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ad_body_style"
+        app:layout_constraintTop_toBottomOf="@+id/ad_body_style" />
+
+    <RadioGroup
+        android:id="@+id/ad_transmission_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fadeScrollbars="true"
+        android:isScrollContainer="true"
+        android:nestedScrollingEnabled="true"
+        android:orientation="horizontal"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/ad_body_style"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"/>
+
+    <!--<com.google.android.material.textfield.TextInputLayout-->
+        <!--android:id="@+id/ad_transmission"-->
+        <!--style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:hint="Transmission"-->
+        <!--android:textColorHint="@drawable/reg_input_sel"-->
+        <!--android:visibility="visible"-->
+        <!--app:boxCornerRadiusBottomEnd="0dp"-->
+        <!--app:boxCornerRadiusBottomStart="0dp"-->
+        <!--app:boxCornerRadiusTopEnd="5dp"-->
+        <!--app:boxCornerRadiusTopStart="5dp"-->
+        <!--app:boxStrokeColor="@drawable/reg_selector"-->
+        <!--app:hintAnimationEnabled="true"-->
+        <!--app:hintEnabled="true"-->
+        <!--app:layout_constraintEnd_toEndOf="@+id/ad_body_style"-->
+        <!--app:layout_constraintStart_toStartOf="@+id/ad_body_style"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/ad_body_style">-->
+
+        <!--<com.google.android.material.textfield.TextInputEditText-->
+            <!--android:id="@+id/ad_transmission_field"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:drawableEnd="@drawable/ic_drop_down_dp"-->
+            <!--android:imeOptions="actionNext"-->
+            <!--android:inputType="textCapWords|textAutoCorrect|textPersonName" />-->
+
+    <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ad_mileage"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Mileage"
+        android:textColorHint="@drawable/reg_input_sel"
+        android:visibility="visible"
+        app:boxCornerRadiusBottomEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        app:boxStrokeColor="@drawable/reg_selector"
+        app:errorEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ad_transmission_group"
+        app:layout_constraintStart_toStartOf="@+id/ad_transmission_group"
+        app:layout_constraintTop_toBottomOf="@+id/ad_transmission_group">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ad_mileage_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="textAutoCorrect|number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

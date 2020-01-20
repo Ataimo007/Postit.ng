@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item-->
+        <!--android:id="@+id/nav_menu_category"-->
+        <!--android:enabled="true"-->
+        <!--android:icon="@drawable/ic_apps_black_24dp"-->
+        <!--android:title="Make"-->
+        <!--android:visible="true"-->
+        <!--app:showAsAction="ifRoom" />-->
+    <item
+        android:id="@+id/nav_menu_make"
+        android:enabled="true"
+        android:icon="@drawable/ic_make"
+        android:title="Make"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/nav_menu_spec"
+        android:enabled="true"
+        android:icon="@drawable/ic_prefs"
+        android:title="Specification"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_menu_region"
+        android:enabled="true"
+        android:icon="@drawable/ic_location_on_black_24dp"
+        android:title="Region"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+</menu>

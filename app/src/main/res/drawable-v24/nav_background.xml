@@ -1,0 +1,29 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <bitmap
+            android:gravity="center_vertical|center_horizontal"
+            android:src="@drawable/nav_back" />
+        <padding android:left="100dp"/>
+    </item>
+
+    <!-- background shape -->
+    <item>
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle" >
+            <solid android:color="#dcffffff"/> />
+        </shape>
+    </item>
+
+    <!--
+    icon that overlays the background shape; this icon
+    has gravity set to center, but how can I change offset
+    from center?
+    -->
+
+
+</layer-list>
+
+    <!--android:width="40dp"-->
+    <!--android:height="40dp"-->

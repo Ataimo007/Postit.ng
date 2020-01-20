@@ -1,0 +1,12 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+
+        <bitmap
+            android:gravity="clip_horizontal|clip_vertical"
+            android:src="@drawable/logo" />
+    </item>
+</layer-list>
+
+
+    <!--android:width="40dp"-->
+    <!--android:height="40dp"-->
