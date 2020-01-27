@@ -35,6 +35,10 @@ The Postit App provides a platform where users can advertise their goods and ser
 ![Postit.ng Screenshots](https://github.com/Ataimo007/Postit.ng/blob/master/appshots/shot9.png)
 
 
+## Cross Platform Version
+This is the link to the cross platform version repository. The cross version app works for both Andriod and IOS.
+[Postit.ngX](https://github.com/Ataimo007/Postit.ngX)
+
 
 Also you could also download the app from google play
 
