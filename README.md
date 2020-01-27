@@ -41,6 +41,7 @@ This is the link to the cross platform version repository. The cross version app
 [Postit.ngX](https://github.com/Ataimo007/Postit.ngX)
 
 
-Also you could also download the app from google play
+## Google App
+Also, you can download the app from google play store using the link below
 
 https://play.google.com/store/apps/details?id=com.postit.classified.postit
